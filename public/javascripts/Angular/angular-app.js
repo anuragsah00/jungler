@@ -5,7 +5,7 @@
 		$scope.baseSite = '';
 
 		$scope.searchFromBaseSite = function () {
-			$http.post('/crawl', $scope.baseSite)
+			$http.post('/crawl', { baseSite: $scope.baseSite})
 				.success(function (websites) {
 
 				});
