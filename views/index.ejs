@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Jungler</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body ng-app="Jungler">
+
+  	<div class="container" ng-controller="SearchCtrl">
+  		<h1 class="page-header">Jungler</h1>
+
+			<div class="input-group">
+				<input type="text" placeholder="Enter base site" class="form-control" ng-model="baseSite">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="button" ng-click="searchFromBaseSite()">Jungle</button>
+				</span>
+			</div>
+  	</div>
+
+  	<script type="text/javascript" src="javascripts/Angular/angular.js"></script>
+  	<script type="text/javascript" src="javascripts/Angular/angular-app.js"></script>
   </body>
 </html>
